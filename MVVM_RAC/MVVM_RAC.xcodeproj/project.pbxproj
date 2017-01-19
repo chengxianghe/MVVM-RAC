@@ -17,6 +17,7 @@
 		14DCFECA1E3086CC001733FD /* MRRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DCFEC91E3086CC001733FD /* MRRegisterViewController.m */; };
 		14DCFECD1E3086E5001733FD /* MRHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DCFECC1E3086E5001733FD /* MRHomeViewController.m */; };
 		14DCFED01E308DB9001733FD /* MRLoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DCFECF1E308DB9001733FD /* MRLoginService.m */; };
+		14DCFED31E3094EF001733FD /* MRRegisterService.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DCFED21E3094EF001733FD /* MRRegisterService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		14DCFECC1E3086E5001733FD /* MRHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRHomeViewController.m; sourceTree = "<group>"; };
 		14DCFECE1E308DB9001733FD /* MRLoginService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRLoginService.h; sourceTree = "<group>"; };
 		14DCFECF1E308DB9001733FD /* MRLoginService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRLoginService.m; sourceTree = "<group>"; };
+		14DCFED11E3094EF001733FD /* MRRegisterService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRRegisterService.h; sourceTree = "<group>"; };
+		14DCFED21E3094EF001733FD /* MRRegisterService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRRegisterService.m; sourceTree = "<group>"; };
 		1F8ADABE5292DCC951F3947E /* Pods-MVVM_RAC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM_RAC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM_RAC/Pods-MVVM_RAC.debug.xcconfig"; sourceTree = "<group>"; };
 		3E8BE5B4C0E13F615D078AA7 /* libPods-MVVM_RAC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVM_RAC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		575F99AC615074BB364FCFEB /* Pods-MVVM_RAC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM_RAC.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM_RAC/Pods-MVVM_RAC.release.xcconfig"; sourceTree = "<group>"; };
@@ -74,7 +77,8 @@
 		14DCFEA51E306790001733FD /* MVVM_RAC */ = {
 			isa = PBXGroup;
 			children = (
-				14DCFEC41E308692001733FD /* StoryBoard */,
+				14DCFEAF1E306790001733FD /* Main.storyboard */,
+				14DCFEB41E306790001733FD /* LaunchScreen.storyboard */,
 				14DCFEC31E308658001733FD /* Resource */,
 				14DCFEBD1E308658001733FD /* OpenLib */,
 				14DCFEBE1E308658001733FD /* Project */,
@@ -138,6 +142,8 @@
 			children = (
 				14DCFECE1E308DB9001733FD /* MRLoginService.h */,
 				14DCFECF1E308DB9001733FD /* MRLoginService.m */,
+				14DCFED11E3094EF001733FD /* MRRegisterService.h */,
+				14DCFED21E3094EF001733FD /* MRRegisterService.m */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -154,15 +160,6 @@
 			children = (
 			);
 			path = Resource;
-			sourceTree = "<group>";
-		};
-		14DCFEC41E308692001733FD /* StoryBoard */ = {
-			isa = PBXGroup;
-			children = (
-				14DCFEAF1E306790001733FD /* Main.storyboard */,
-				14DCFEB41E306790001733FD /* LaunchScreen.storyboard */,
-			);
-			path = StoryBoard;
 			sourceTree = "<group>";
 		};
 		7A7B011304AC09C1D135D321 /* Frameworks */ = {
@@ -311,6 +308,7 @@
 				14DCFEA81E306790001733FD /* main.m in Sources */,
 				14DCFED01E308DB9001733FD /* MRLoginService.m in Sources */,
 				14DCFECD1E3086E5001733FD /* MRHomeViewController.m in Sources */,
+				14DCFED31E3094EF001733FD /* MRRegisterService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +321,6 @@
 				14DCFEB01E306790001733FD /* Base */,
 			);
 			name = Main.storyboard;
-			path = ..;
 			sourceTree = "<group>";
 		};
 		14DCFEB41E306790001733FD /* LaunchScreen.storyboard */ = {
@@ -332,7 +329,6 @@
 				14DCFEB51E306790001733FD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
