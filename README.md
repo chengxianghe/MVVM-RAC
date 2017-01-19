@@ -12,7 +12,7 @@ demo
 
 ## Features (TODO)
 
-- [ ] 登录和注册页面
+- [X] 登录和注册页面
 - [ ] UITableView列表
 - [ ] 内容详情
 
