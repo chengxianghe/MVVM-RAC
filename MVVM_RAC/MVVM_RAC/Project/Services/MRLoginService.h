@@ -16,7 +16,7 @@ typedef void (^MRLoginResponse)(BOOL);
 
 + (BOOL)isValidPassword:(NSString *)password;
 
-- (void)signInWithUsername:(NSString *)username password:(NSString *)password complete:(MRLoginResponse)completeBlock;
++ (void)signInWithUsername:(NSString *)username password:(NSString *)password complete:(MRLoginResponse)completeBlock;
 
 
 

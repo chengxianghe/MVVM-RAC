@@ -18,8 +18,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *registerButton;
 @property (weak, nonatomic) IBOutlet UILabel *signInFailureText;
 
-@property (strong, nonatomic) MRLoginService *loginService;
-
 @end
 
 @implementation MRLoginViewController
@@ -27,9 +25,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    // service
-    self.loginService = [[MRLoginService alloc] init];
     
     self.signInFailureText.hidden = YES;
     
@@ -93,12 +88,12 @@
 - (RACSignal *)signInSignal {
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         // sign in
-        [self.loginService signInWithUsername:self.usernameTextField.text
-                                     password:self.passwordTextField.text
-                                     complete:^(BOOL success) {
-                                         [subscriber sendNext:@(success)];
-                                         [subscriber sendCompleted];
-                                     }];
+        [MRLoginService signInWithUsername:self.usernameTextField.text
+                                  password:self.passwordTextField.text
+                                  complete:^(BOOL success) {
+                                      [subscriber sendNext:@(success)];
+                                      [subscriber sendCompleted];
+                                  }];
         return nil;
     }];
 }

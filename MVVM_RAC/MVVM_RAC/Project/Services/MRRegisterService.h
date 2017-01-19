@@ -14,6 +14,6 @@ typedef void(^MRRegisterServiceBlock)(BOOL);
 
 + (BOOL)isValidPassword:(NSString *)password andSurePassword:(NSString *)surePassword;
 
-- (void)registerWithUsername:(NSString *)username password:(NSString *)password complete:(MRRegisterServiceBlock)completeBlock;
++ (void)registerWithUsername:(NSString *)username password:(NSString *)password complete:(MRRegisterServiceBlock)completeBlock;
 
 @end

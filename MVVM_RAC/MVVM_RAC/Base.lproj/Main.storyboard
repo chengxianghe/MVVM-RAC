@@ -194,20 +194,6 @@
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用户名输入有误" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfA-eq-7It">
-                                <rect key="frame" x="20" y="85" width="122" height="21"/>
-                                <color key="backgroundColor" red="1" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.018977788870000002" blue="0.040716178679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密码输入有误" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7j-XB-XdK">
-                                <rect key="frame" x="20" y="175" width="104" height="21"/>
-                                <color key="backgroundColor" red="1" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.018977788870000002" blue="0.040716178679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="两次密码不一致" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V33-89-txG">
                                 <rect key="frame" x="20" y="265" width="122" height="21"/>
                                 <color key="backgroundColor" red="1" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -219,12 +205,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="E5Z-ge-Wir" firstAttribute="top" secondItem="VDc-zM-dCH" secondAttribute="bottom" constant="50" id="6Z5-Lb-WBf"/>
-                            <constraint firstItem="E5Z-ge-Wir" firstAttribute="top" secondItem="dfA-eq-7It" secondAttribute="bottom" constant="8" id="7SG-77-ESK"/>
-                            <constraint firstItem="Giy-Tt-WwM" firstAttribute="top" secondItem="W7j-XB-XdK" secondAttribute="bottom" constant="8" id="GbQ-iL-PVN"/>
-                            <constraint firstItem="Giy-Tt-WwM" firstAttribute="leading" secondItem="W7j-XB-XdK" secondAttribute="leading" id="HOC-Ze-dp7"/>
                             <constraint firstItem="oTJ-lo-los" firstAttribute="leading" secondItem="V33-89-txG" secondAttribute="leading" id="Jw0-vq-dHv"/>
                             <constraint firstItem="oTJ-lo-los" firstAttribute="top" secondItem="V33-89-txG" secondAttribute="bottom" constant="8" id="KMO-A6-yEc"/>
-                            <constraint firstItem="E5Z-ge-Wir" firstAttribute="leading" secondItem="dfA-eq-7It" secondAttribute="leading" id="KOl-jl-pRJ"/>
                             <constraint firstItem="Giy-Tt-WwM" firstAttribute="top" secondItem="E5Z-ge-Wir" secondAttribute="bottom" constant="50" id="Z7Y-8I-i3F"/>
                             <constraint firstItem="Giy-Tt-WwM" firstAttribute="leading" secondItem="E5Z-ge-Wir" secondAttribute="leading" id="Zin-iD-Npr"/>
                             <constraint firstItem="oTJ-lo-los" firstAttribute="top" secondItem="Giy-Tt-WwM" secondAttribute="bottom" constant="50" id="aYY-EQ-t7u"/>
@@ -242,6 +224,7 @@
                         <outlet property="passwordAgainTextField" destination="oTJ-lo-los" id="7BO-dj-dQi"/>
                         <outlet property="passwordTextField" destination="Giy-Tt-WwM" id="3GE-0Z-LKZ"/>
                         <outlet property="sureButton" destination="nV7-wR-Sch" id="Caf-ma-TIT"/>
+                        <outlet property="surePasswordFailureLabel" destination="V33-89-txG" id="23X-Ib-Iis"/>
                         <outlet property="usernameTextField" destination="E5Z-ge-Wir" id="P8Y-ZS-OY0"/>
                     </connections>
                 </viewController>
