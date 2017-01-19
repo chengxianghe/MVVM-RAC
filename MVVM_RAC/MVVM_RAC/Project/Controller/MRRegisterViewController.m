@@ -85,6 +85,30 @@
         self.sureButton.enabled = [registerActive boolValue];
     }];
     
+    // 绑定注册按钮事件
+    [[[[self.sureButton rac_signalForControlEvents:UIControlEventTouchUpInside] doNext:^(id x) {
+        self.sureButton.enabled = NO;
+    }] flattenMap:^id(id value) {
+        // 此处判断登录是否成功 并返回信号
+        RACSignal *registerSignal = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+            [MRRegisterService registerWithUsername:self.usernameTextField.text
+                                      password:self.passwordTextField.text
+                                      complete:^(BOOL success) {
+                                          [subscriber sendNext:@(success)];
+                                          [subscriber sendCompleted];
+                                      }];
+            return nil;
+        }];
+        return registerSignal;
+    }] subscribeNext:^(NSNumber *registerResult) {
+        NSLog(@"register result: %@", registerResult);
+        BOOL success = [registerResult boolValue];
+        if (success) {
+            [self.navigationController popViewControllerAnimated:YES];
+        } else {
+            self.sureButton.enabled = NO;
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
