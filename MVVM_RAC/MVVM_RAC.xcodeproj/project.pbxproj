@@ -10,23 +10,32 @@
 		0D534FC25146C54ADC31AC66 /* libPods-MVVM_RAC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E8BE5B4C0E13F615D078AA7 /* libPods-MVVM_RAC.a */; };
 		14DCFEA81E306790001733FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DCFEA71E306790001733FD /* main.m */; };
 		14DCFEAB1E306790001733FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DCFEAA1E306790001733FD /* AppDelegate.m */; };
-		14DCFEAE1E306790001733FD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DCFEAD1E306790001733FD /* ViewController.m */; };
 		14DCFEB11E306790001733FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14DCFEAF1E306790001733FD /* Main.storyboard */; };
 		14DCFEB31E306790001733FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14DCFEB21E306790001733FD /* Assets.xcassets */; };
 		14DCFEB61E306790001733FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14DCFEB41E306790001733FD /* LaunchScreen.storyboard */; };
+		14DCFEC71E3086B9001733FD /* MRLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DCFEC61E3086B9001733FD /* MRLoginViewController.m */; };
+		14DCFECA1E3086CC001733FD /* MRRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DCFEC91E3086CC001733FD /* MRRegisterViewController.m */; };
+		14DCFECD1E3086E5001733FD /* MRHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DCFECC1E3086E5001733FD /* MRHomeViewController.m */; };
+		14DCFED01E308DB9001733FD /* MRLoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DCFECF1E308DB9001733FD /* MRLoginService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		14DCFEA31E306790001733FD /* MVVM_RAC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM_RAC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14DCFEA71E306790001733FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		14DCFEA91E306790001733FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		14DCFEAA1E306790001733FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		14DCFEAC1E306790001733FD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		14DCFEAD1E306790001733FD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		14DCFEA91E306790001733FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
+		14DCFEAA1E306790001733FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
 		14DCFEB01E306790001733FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14DCFEB21E306790001733FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14DCFEB51E306790001733FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14DCFEB71E306790001733FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14DCFEC51E3086B9001733FD /* MRLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRLoginViewController.h; sourceTree = "<group>"; };
+		14DCFEC61E3086B9001733FD /* MRLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRLoginViewController.m; sourceTree = "<group>"; };
+		14DCFEC81E3086CC001733FD /* MRRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRRegisterViewController.h; sourceTree = "<group>"; };
+		14DCFEC91E3086CC001733FD /* MRRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRRegisterViewController.m; sourceTree = "<group>"; };
+		14DCFECB1E3086E5001733FD /* MRHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRHomeViewController.h; sourceTree = "<group>"; };
+		14DCFECC1E3086E5001733FD /* MRHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRHomeViewController.m; sourceTree = "<group>"; };
+		14DCFECE1E308DB9001733FD /* MRLoginService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRLoginService.h; sourceTree = "<group>"; };
+		14DCFECF1E308DB9001733FD /* MRLoginService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRLoginService.m; sourceTree = "<group>"; };
 		1F8ADABE5292DCC951F3947E /* Pods-MVVM_RAC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM_RAC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM_RAC/Pods-MVVM_RAC.debug.xcconfig"; sourceTree = "<group>"; };
 		3E8BE5B4C0E13F615D078AA7 /* libPods-MVVM_RAC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVM_RAC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		575F99AC615074BB364FCFEB /* Pods-MVVM_RAC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM_RAC.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM_RAC/Pods-MVVM_RAC.release.xcconfig"; sourceTree = "<group>"; };
@@ -65,14 +74,10 @@
 		14DCFEA51E306790001733FD /* MVVM_RAC */ = {
 			isa = PBXGroup;
 			children = (
-				14DCFEA91E306790001733FD /* AppDelegate.h */,
-				14DCFEAA1E306790001733FD /* AppDelegate.m */,
-				14DCFEAC1E306790001733FD /* ViewController.h */,
-				14DCFEAD1E306790001733FD /* ViewController.m */,
-				14DCFEAF1E306790001733FD /* Main.storyboard */,
-				14DCFEB21E306790001733FD /* Assets.xcassets */,
-				14DCFEB41E306790001733FD /* LaunchScreen.storyboard */,
-				14DCFEB71E306790001733FD /* Info.plist */,
+				14DCFEC41E308692001733FD /* StoryBoard */,
+				14DCFEC31E308658001733FD /* Resource */,
+				14DCFEBD1E308658001733FD /* OpenLib */,
+				14DCFEBE1E308658001733FD /* Project */,
 				14DCFEA61E306790001733FD /* Supporting Files */,
 			);
 			path = MVVM_RAC;
@@ -81,9 +86,83 @@
 		14DCFEA61E306790001733FD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				14DCFEB21E306790001733FD /* Assets.xcassets */,
+				14DCFEB71E306790001733FD /* Info.plist */,
 				14DCFEA71E306790001733FD /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14DCFEBD1E308658001733FD /* OpenLib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OpenLib;
+			sourceTree = "<group>";
+		};
+		14DCFEBE1E308658001733FD /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				14DCFEA91E306790001733FD /* AppDelegate.h */,
+				14DCFEAA1E306790001733FD /* AppDelegate.m */,
+				14DCFEBF1E308658001733FD /* Controller */,
+				14DCFEC01E308658001733FD /* Model */,
+				14DCFEC11E308658001733FD /* Services */,
+				14DCFEC21E308658001733FD /* ViewModel */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		14DCFEBF1E308658001733FD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				14DCFEC51E3086B9001733FD /* MRLoginViewController.h */,
+				14DCFEC61E3086B9001733FD /* MRLoginViewController.m */,
+				14DCFEC81E3086CC001733FD /* MRRegisterViewController.h */,
+				14DCFEC91E3086CC001733FD /* MRRegisterViewController.m */,
+				14DCFECB1E3086E5001733FD /* MRHomeViewController.h */,
+				14DCFECC1E3086E5001733FD /* MRHomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		14DCFEC01E308658001733FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		14DCFEC11E308658001733FD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				14DCFECE1E308DB9001733FD /* MRLoginService.h */,
+				14DCFECF1E308DB9001733FD /* MRLoginService.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		14DCFEC21E308658001733FD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		14DCFEC31E308658001733FD /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		14DCFEC41E308692001733FD /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				14DCFEAF1E306790001733FD /* Main.storyboard */,
+				14DCFEB41E306790001733FD /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
 			sourceTree = "<group>";
 		};
 		7A7B011304AC09C1D135D321 /* Frameworks */ = {
@@ -226,9 +305,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14DCFEAE1E306790001733FD /* ViewController.m in Sources */,
+				14DCFECA1E3086CC001733FD /* MRRegisterViewController.m in Sources */,
 				14DCFEAB1E306790001733FD /* AppDelegate.m in Sources */,
+				14DCFEC71E3086B9001733FD /* MRLoginViewController.m in Sources */,
 				14DCFEA81E306790001733FD /* main.m in Sources */,
+				14DCFED01E308DB9001733FD /* MRLoginService.m in Sources */,
+				14DCFECD1E3086E5001733FD /* MRHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +323,7 @@
 				14DCFEB01E306790001733FD /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		14DCFEB41E306790001733FD /* LaunchScreen.storyboard */ = {
@@ -249,6 +332,7 @@
 				14DCFEB51E306790001733FD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

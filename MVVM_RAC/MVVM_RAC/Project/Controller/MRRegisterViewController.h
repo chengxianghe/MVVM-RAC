@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MRRegisterViewController.h
 //  MVVM_RAC
 //
 //  Created by chengxianghe on 2017/1/19.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MRRegisterViewController : UIViewController
 
 @end
-
