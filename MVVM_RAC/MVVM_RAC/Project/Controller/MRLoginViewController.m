@@ -71,7 +71,9 @@
         self.signInButton.enabled = YES;
         self.signInFailureText.hidden = success;
         if (success) {
-            [self performSegueWithIdentifier:@"signInSuccess" sender:self];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self performSegueWithIdentifier:@"signInSuccess" sender:self];
+            });
         }
     }];
 
@@ -80,7 +82,9 @@
         self.registerButton.enabled = NO;
     }] subscribeNext:^(id x) {
         self.registerButton.enabled = YES;
-        [self performSegueWithIdentifier:@"gotoRegister" sender:nil];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self performSegueWithIdentifier:@"gotoRegister" sender:nil];
+        });
     }];
 
 }

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -113,7 +114,7 @@
             </objects>
             <point key="canvasLocation" x="-1062" y="-210"/>
         </scene>
-        <!--Kitten!-->
+        <!--Heros-->
         <scene sceneID="jfW-mr-ebJ">
             <objects>
                 <viewController storyboardIdentifier="success" id="pr5-Wy-Rk4" customClass="MRHomeViewController" sceneMemberID="viewController">
@@ -124,28 +125,61 @@
                     <view key="view" contentMode="scaleToFill" id="SnI-B2-GgF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kitten" translatesAutoresizingMaskIntoConstraints="NO" id="Mp9-YY-e52">
-                                <rect key="frame" x="0.0" y="20" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="http://www.flickr.com/photos/50362297@N07" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2V-1E-Cyg">
-                                <rect key="frame" x="20" y="636" width="203" height="11"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="ddV-d9-U31" firstAttribute="top" secondItem="y2V-1E-Cyg" secondAttribute="bottom" constant="20" id="EQF-wQ-Rx5"/>
-                            <constraint firstItem="y2V-1E-Cyg" firstAttribute="leading" secondItem="SnI-B2-GgF" secondAttribute="leading" constant="20" id="uBa-Fg-S1m"/>
-                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Kitten!" id="FXX-18-hHh"/>
+                    <navigationItem key="navigationItem" title="Heros" id="FXX-18-hHh"/>
+                    <connections>
+                        <segue destination="m0q-jF-HBx" kind="show" identifier="gotoHero" id="3hw-H4-Fvk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LvZ-bT-Vz6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-188" y="-477"/>
+            <point key="canvasLocation" x="-188" y="-477.21139430284859"/>
+        </scene>
+        <!--Hero-->
+        <scene sceneID="o3j-aU-Gau">
+            <objects>
+                <viewController id="m0q-jF-HBx" customClass="MRHeroViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u98-g8-Uiz"/>
+                        <viewControllerLayoutGuide type="bottom" id="4F9-Iv-Ej8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mRp-AI-b0Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ycm-zx-QG8">
+                                <rect key="frame" x="60" y="124" width="255" height="255"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ycm-zx-QG8" secondAttribute="height" multiplier="1:1" id="Z2o-MB-z0X"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahv-U0-20g">
+                                <rect key="frame" x="20" y="399" width="335" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ahv-U0-20g" secondAttribute="trailing" constant="20" id="WF1-Kc-Ue3"/>
+                            <constraint firstItem="ahv-U0-20g" firstAttribute="top" secondItem="Ycm-zx-QG8" secondAttribute="bottom" constant="20" id="ani-wB-zfJ"/>
+                            <constraint firstItem="ahv-U0-20g" firstAttribute="leading" secondItem="mRp-AI-b0Q" secondAttribute="leading" constant="20" id="iIA-yc-wLq"/>
+                            <constraint firstItem="Ycm-zx-QG8" firstAttribute="leading" secondItem="mRp-AI-b0Q" secondAttribute="leading" constant="60" id="lEx-bc-Ljh"/>
+                            <constraint firstItem="Ycm-zx-QG8" firstAttribute="top" secondItem="u98-g8-Uiz" secondAttribute="bottom" constant="60" id="wbk-EM-NoY"/>
+                            <constraint firstAttribute="trailing" secondItem="Ycm-zx-QG8" secondAttribute="trailing" constant="60" id="xuq-hD-SmT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hero" id="hK7-Qc-Hei"/>
+                    <connections>
+                        <outlet property="iconImageView" destination="Ycm-zx-QG8" id="ZBR-L2-9Id"/>
+                        <outlet property="infoLabel" destination="ahv-U0-20g" id="XEz-dA-Y3h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VBc-Mw-AuN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="644" y="-477"/>
         </scene>
         <!--注册-->
         <scene sceneID="HPv-vF-jhn">
@@ -233,7 +267,4 @@
             <point key="canvasLocation" x="-188" y="189"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="kitten" width="268" height="370"/>
-    </resources>
 </document>

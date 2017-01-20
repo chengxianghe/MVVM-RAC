@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0D534FC25146C54ADC31AC66 /* libPods-MVVM_RAC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E8BE5B4C0E13F615D078AA7 /* libPods-MVVM_RAC.a */; };
+		144CA51A1E31AF7700D6EE4B /* heros.plist in Resources */ = {isa = PBXBuildFile; fileRef = 144CA5191E31AF7700D6EE4B /* heros.plist */; };
+		144CA51E1E31B04700D6EE4B /* MRHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 144CA51D1E31B04700D6EE4B /* MRHomeCell.m */; };
+		144CA5211E31B1B600D6EE4B /* MRHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 144CA5201E31B1B600D6EE4B /* MRHomeModel.m */; };
+		144CA55D1E31B8F800D6EE4B /* MRHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 144CA55C1E31B8F800D6EE4B /* MRHomeViewModel.m */; };
+		144CA5601E31BBD500D6EE4B /* MRTempViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144CA55F1E31BBD500D6EE4B /* MRTempViewController.m */; };
+		144CA5641E31D6FE00D6EE4B /* MRHomeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 144CA5631E31D6FE00D6EE4B /* MRHomeTableView.m */; };
+		144CA5691E31E07900D6EE4B /* MRHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 144CA5681E31E07900D6EE4B /* MRHomeCell.xib */; };
+		144CA56C1E31E98200D6EE4B /* MRHeroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144CA56B1E31E98200D6EE4B /* MRHeroViewController.m */; };
 		14DCFEA81E306790001733FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DCFEA71E306790001733FD /* main.m */; };
 		14DCFEAB1E306790001733FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DCFEAA1E306790001733FD /* AppDelegate.m */; };
 		14DCFEB11E306790001733FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14DCFEAF1E306790001733FD /* Main.storyboard */; };
@@ -21,6 +29,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		144CA5191E31AF7700D6EE4B /* heros.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = heros.plist; sourceTree = "<group>"; };
+		144CA51C1E31B04700D6EE4B /* MRHomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRHomeCell.h; sourceTree = "<group>"; };
+		144CA51D1E31B04700D6EE4B /* MRHomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRHomeCell.m; sourceTree = "<group>"; };
+		144CA51F1E31B1B600D6EE4B /* MRHomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRHomeModel.h; sourceTree = "<group>"; };
+		144CA5201E31B1B600D6EE4B /* MRHomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRHomeModel.m; sourceTree = "<group>"; };
+		144CA55B1E31B8F800D6EE4B /* MRHomeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRHomeViewModel.h; sourceTree = "<group>"; };
+		144CA55C1E31B8F800D6EE4B /* MRHomeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRHomeViewModel.m; sourceTree = "<group>"; };
+		144CA55E1E31BBD500D6EE4B /* MRTempViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRTempViewController.h; sourceTree = "<group>"; };
+		144CA55F1E31BBD500D6EE4B /* MRTempViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRTempViewController.m; sourceTree = "<group>"; };
+		144CA5621E31D6FE00D6EE4B /* MRHomeTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRHomeTableView.h; sourceTree = "<group>"; };
+		144CA5631E31D6FE00D6EE4B /* MRHomeTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRHomeTableView.m; sourceTree = "<group>"; };
+		144CA5681E31E07900D6EE4B /* MRHomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRHomeCell.xib; sourceTree = "<group>"; };
+		144CA56A1E31E98200D6EE4B /* MRHeroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRHeroViewController.h; sourceTree = "<group>"; };
+		144CA56B1E31E98200D6EE4B /* MRHeroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRHeroViewController.m; sourceTree = "<group>"; };
 		14DCFEA31E306790001733FD /* MVVM_RAC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM_RAC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14DCFEA71E306790001733FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		14DCFEA91E306790001733FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -56,6 +78,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		144CA51B1E31B03000D6EE4B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				144CA51C1E31B04700D6EE4B /* MRHomeCell.h */,
+				144CA51D1E31B04700D6EE4B /* MRHomeCell.m */,
+				144CA5681E31E07900D6EE4B /* MRHomeCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		144CA5611E31D6E100D6EE4B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				144CA5621E31D6FE00D6EE4B /* MRHomeTableView.h */,
+				144CA5631E31D6FE00D6EE4B /* MRHomeTableView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		14DCFE9A1E306790001733FD = {
 			isa = PBXGroup;
 			children = (
@@ -110,8 +151,10 @@
 				14DCFEA91E306790001733FD /* AppDelegate.h */,
 				14DCFEAA1E306790001733FD /* AppDelegate.m */,
 				14DCFEBF1E308658001733FD /* Controller */,
+				144CA51B1E31B03000D6EE4B /* Cell */,
 				14DCFEC01E308658001733FD /* Model */,
 				14DCFEC11E308658001733FD /* Services */,
+				144CA5611E31D6E100D6EE4B /* View */,
 				14DCFEC21E308658001733FD /* ViewModel */,
 			);
 			path = Project;
@@ -126,6 +169,10 @@
 				14DCFEC91E3086CC001733FD /* MRRegisterViewController.m */,
 				14DCFECB1E3086E5001733FD /* MRHomeViewController.h */,
 				14DCFECC1E3086E5001733FD /* MRHomeViewController.m */,
+				144CA55E1E31BBD500D6EE4B /* MRTempViewController.h */,
+				144CA55F1E31BBD500D6EE4B /* MRTempViewController.m */,
+				144CA56A1E31E98200D6EE4B /* MRHeroViewController.h */,
+				144CA56B1E31E98200D6EE4B /* MRHeroViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -133,6 +180,8 @@
 		14DCFEC01E308658001733FD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				144CA51F1E31B1B600D6EE4B /* MRHomeModel.h */,
+				144CA5201E31B1B600D6EE4B /* MRHomeModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -151,6 +200,8 @@
 		14DCFEC21E308658001733FD /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				144CA55B1E31B8F800D6EE4B /* MRHomeViewModel.h */,
+				144CA55C1E31B8F800D6EE4B /* MRHomeViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -158,6 +209,7 @@
 		14DCFEC31E308658001733FD /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				144CA5191E31AF7700D6EE4B /* heros.plist */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -242,7 +294,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				14DCFEB61E306790001733FD /* LaunchScreen.storyboard in Resources */,
+				144CA5691E31E07900D6EE4B /* MRHomeCell.xib in Resources */,
 				14DCFEB31E306790001733FD /* Assets.xcassets in Resources */,
+				144CA51A1E31AF7700D6EE4B /* heros.plist in Resources */,
 				14DCFEB11E306790001733FD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,12 +357,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				14DCFECA1E3086CC001733FD /* MRRegisterViewController.m in Sources */,
+				144CA5601E31BBD500D6EE4B /* MRTempViewController.m in Sources */,
 				14DCFEAB1E306790001733FD /* AppDelegate.m in Sources */,
 				14DCFEC71E3086B9001733FD /* MRLoginViewController.m in Sources */,
+				144CA55D1E31B8F800D6EE4B /* MRHomeViewModel.m in Sources */,
 				14DCFEA81E306790001733FD /* main.m in Sources */,
+				144CA5211E31B1B600D6EE4B /* MRHomeModel.m in Sources */,
+				144CA5641E31D6FE00D6EE4B /* MRHomeTableView.m in Sources */,
 				14DCFED01E308DB9001733FD /* MRLoginService.m in Sources */,
 				14DCFECD1E3086E5001733FD /* MRHomeViewController.m in Sources */,
 				14DCFED31E3094EF001733FD /* MRRegisterService.m in Sources */,
+				144CA51E1E31B04700D6EE4B /* MRHomeCell.m in Sources */,
+				144CA56C1E31E98200D6EE4B /* MRHeroViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
