@@ -13,9 +13,9 @@ demo
 ## Features (TODO)
 
 - [X] 登录和注册页面
-- [ ] UITableView列表
-- [ ] 内容详情
-
+- [X] UITableView列表
+- [X] 内容详情
+- [ ] UITableView列表搜索
 
 
 ### License
