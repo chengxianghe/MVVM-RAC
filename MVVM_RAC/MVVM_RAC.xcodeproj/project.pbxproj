@@ -12,7 +12,6 @@
 		144CA51E1E31B04700D6EE4B /* MRHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 144CA51D1E31B04700D6EE4B /* MRHomeCell.m */; };
 		144CA5211E31B1B600D6EE4B /* MRHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 144CA5201E31B1B600D6EE4B /* MRHomeModel.m */; };
 		144CA55D1E31B8F800D6EE4B /* MRHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 144CA55C1E31B8F800D6EE4B /* MRHomeViewModel.m */; };
-		144CA5601E31BBD500D6EE4B /* MRTempViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144CA55F1E31BBD500D6EE4B /* MRTempViewController.m */; };
 		144CA5641E31D6FE00D6EE4B /* MRHomeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 144CA5631E31D6FE00D6EE4B /* MRHomeTableView.m */; };
 		144CA5691E31E07900D6EE4B /* MRHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 144CA5681E31E07900D6EE4B /* MRHomeCell.xib */; };
 		144CA56C1E31E98200D6EE4B /* MRHeroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144CA56B1E31E98200D6EE4B /* MRHeroViewController.m */; };
@@ -36,8 +35,6 @@
 		144CA5201E31B1B600D6EE4B /* MRHomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRHomeModel.m; sourceTree = "<group>"; };
 		144CA55B1E31B8F800D6EE4B /* MRHomeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRHomeViewModel.h; sourceTree = "<group>"; };
 		144CA55C1E31B8F800D6EE4B /* MRHomeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRHomeViewModel.m; sourceTree = "<group>"; };
-		144CA55E1E31BBD500D6EE4B /* MRTempViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRTempViewController.h; sourceTree = "<group>"; };
-		144CA55F1E31BBD500D6EE4B /* MRTempViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRTempViewController.m; sourceTree = "<group>"; };
 		144CA5621E31D6FE00D6EE4B /* MRHomeTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRHomeTableView.h; sourceTree = "<group>"; };
 		144CA5631E31D6FE00D6EE4B /* MRHomeTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRHomeTableView.m; sourceTree = "<group>"; };
 		144CA5681E31E07900D6EE4B /* MRHomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRHomeCell.xib; sourceTree = "<group>"; };
@@ -169,8 +166,6 @@
 				14DCFEC91E3086CC001733FD /* MRRegisterViewController.m */,
 				14DCFECB1E3086E5001733FD /* MRHomeViewController.h */,
 				14DCFECC1E3086E5001733FD /* MRHomeViewController.m */,
-				144CA55E1E31BBD500D6EE4B /* MRTempViewController.h */,
-				144CA55F1E31BBD500D6EE4B /* MRTempViewController.m */,
 				144CA56A1E31E98200D6EE4B /* MRHeroViewController.h */,
 				144CA56B1E31E98200D6EE4B /* MRHeroViewController.m */,
 			);
@@ -357,7 +352,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				14DCFECA1E3086CC001733FD /* MRRegisterViewController.m in Sources */,
-				144CA5601E31BBD500D6EE4B /* MRTempViewController.m in Sources */,
 				14DCFEAB1E306790001733FD /* AppDelegate.m in Sources */,
 				14DCFEC71E3086B9001733FD /* MRLoginViewController.m in Sources */,
 				144CA55D1E31B8F800D6EE4B /* MRHomeViewModel.m in Sources */,

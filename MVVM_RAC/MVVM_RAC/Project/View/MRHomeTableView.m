@@ -17,7 +17,7 @@
 
 @property (strong, nonatomic) UITableView *mainTableView;
 
-//@property (strong, nonatomic) LSCircleListHeaderView *listHeaderView;
+@property (strong, nonatomic) UISearchBar *searchBar;
 
 
 @end
@@ -96,6 +96,7 @@
                 break;
         }
     }];
+    
 }
 
 #pragma mark - lazyLoad
@@ -118,7 +119,7 @@
         _mainTableView.dataSource = self;
         _mainTableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
         _mainTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-//        _mainTableView.tableHeaderView = self.listHeaderView;
+        _mainTableView.tableHeaderView = self.searchBar;
         [_mainTableView registerNib:[UINib nibWithNibName:@"MRHomeCell" bundle:nil] forCellReuseIdentifier:@"MRHomeCell"];
         
         __weak typeof(self)weakSelf = self;
@@ -134,6 +135,13 @@
     }
     
     return _mainTableView;
+}
+
+- (UISearchBar *)searchBar {
+    if (!_searchBar) {
+        _searchBar = [[UISearchBar alloc] init];
+    }
+    return _searchBar;
 }
 
 

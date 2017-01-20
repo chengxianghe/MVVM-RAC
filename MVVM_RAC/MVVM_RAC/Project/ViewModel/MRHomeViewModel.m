@@ -28,10 +28,6 @@
     return self;
 }
 
-- (void)searchDataWithText:(NSString *)searchText completion:(MRHomeViewModelBlock)completion {
-    
-}
-
 - (void)setup {
     @weakify(self);
     [self.refreshDataCommand.executionSignals.switchToLatest subscribeNext:^(NSMutableArray *array) {
@@ -39,7 +35,6 @@
         @strongify(self);
         self.dataArray = array;
         
-//        [self.listHeaderViewModel.refreshUISubject sendNext:nil];
         [self.refreshEndSubject sendNext:@(MJRefreshStateIdle)];
         [SVProgressHUD showSuccessWithStatus:@"加载完成"];
     }];
@@ -175,16 +170,33 @@
     return _nextPageCommand;
 }
 
-//- (LSCircleListHeaderViewModel *)listHeaderViewModel {
-//    
-//    if (!_listHeaderViewModel) {
-//        
-//        _listHeaderViewModel = [[LSCircleListHeaderViewModel alloc] init];
-//        _listHeaderViewModel.title = @"已加入的圈子";
-//        _listHeaderViewModel.cellClickSubject = self.cellClickSubject;
+//- (RACCommand *)searchCommand {
+//    if (!_searchCommand) {
+//        @weakify(self);
+//        _searchCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
+//            
+//            return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+//                @strongify(self);
+//                
+//                NSString *herosString = [[NSBundle mainBundle] pathForResource:@"heros" ofType:@"plist"];
+//                
+//                NSMutableArray *herosArray = [NSMutableArray arrayWithContentsOfFile:herosString];
+//                NSMutableArray *heros = [NSMutableArray array];
+//                for (NSDictionary *dict in herosArray) {
+//                    if ([(NSString *)dict[@"name"] rangeOfString:@""].length) {
+//                        MRHomeModel *hero = [MRHomeModel mj_objectWithKeyValues:dict];
+//                        [heros addObject:hero];
+//                    }
+//                }
+//                [subscriber sendNext:heros];
+//                [subscriber sendCompleted];
+//                
+//                return nil;
+//            }];
+//        }];
 //    }
 //    
-//    return _listHeaderViewModel;
+//    return _searchCommand;
 //}
 
 - (NSMutableArray <MRHomeModel *>*)dataArray {

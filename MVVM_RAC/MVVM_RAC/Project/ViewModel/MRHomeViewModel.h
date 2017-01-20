@@ -32,6 +32,6 @@ typedef void(^MRHomeViewModelBlock)(NSMutableArray <__kindof MRHomeModel *>*);
 
 @property (nonatomic, strong) RACSubject *cellClickSubject;
 
-- (void)searchDataWithText:(NSString *)searchText completion:(MRHomeViewModelBlock)completion;
+//@property (nonatomic, strong) RACCommand *searchCommand;
 
 @end
